@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  font-family: "Balthazar", serif;
+}
+section{
+  padding: 50px;
+}
+:root {
+  --primary: #edb90f;
+  --secondary: #1d2c38;
+  --secondary-light: #676767;
+
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Kalam", cursive;
+
+  --transition: all 0.5s ease;
+}
+.color-primary {
+  color: var(--primary);
+}
+.color-secondary {
+  color: var(--secondary);
+}
+.color-secondary-light {
+  color: var(--secondary-light);
+}
+.bg-color-primary {
+  background: var(--primary);
+}
+.bg-color-secondary {
+  background: var(--secondary);
+}
+.bg-color-secondary-light {
+  background: var(--secondary-light);
+}
+
+/* NAVBAR  */
+.navbar-nav .active {
+  color: var(--primary) !important;
+}
+.fixed-nav {
+  background: var(--secondary);
+}
+.quote-btn {
+  border: 1px solid transparent;
+  background: var(--primary);
+  color: white;
+  transition: var(--transition);
+}
+.quote-btn:hover {
+  border-color: white;
+  color: white;
+  background: white;
+  transition: var(--transition);
+}
+/* NAVBAR */
+
+/* BANNER */
+.bg-banner {
+  height: 50vh;
+  background: url("./assets/banner-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn {
+  width: max-content;
+}
+/* BANNER */
+
+/* HERO */
+.hero-curve{
+  display: block;
+  box-sizing: border-box;
+  height: 90px;
+  background-color: #fff;
+  clip-path: ellipse(55% 89% at 50% 100%);
+  margin-top: -5rem;
+}
+
+/* SERVICES */
+.about_service{
+  border-bottom: 1px solid var(--primary);
+  background: white;
+  margin-top: -3rem;
+  width: 80%;
+  padding: 1rems;
+}
+.about_service p{
+  font-size: 0.8rem;
+}
+.btn-check:focus+.btn, .btn:focus{
+  box-shadow: none;
+}
+.business{
+  margin-top: 5rem;
+}
+
+/* ABOUT US  */
+#about{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: url('./assets/about-bg.png') center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#about::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 70%);
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+#about h2{
+  margin-top: 7rem;
+}
+.about-description{
+  color: #A3A0A0;
+}
+/* PARTNERS SLIDER  */
+.slick-slide {
+  margin: 0 2rem;
+}
+/* PARTNERS SLIDER  */
